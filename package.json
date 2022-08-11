@@ -1,0 +1,17 @@
+{
+  "name": "codeceptjs-bdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github-tranduydn:duytran/codeceptjs-bdd.git",
+  "license": "MIT",
+  "dependencies": {
+    "allure-commandline": "^2.18.1",
+    "codeceptjs": "^3.3.4",
+    "dotenv-extended": "^2.9.0",
+    "playwright": "^1.25.0"
+  },
+  "scripts": {
+    "acceptance": "codeceptjs def && codeceptjs run --verbose ",
+    "report": "allure serve ./acceptance/report"
+  }
+}
